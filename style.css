@@ -11,6 +11,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 #header-height-offset {
@@ -35,4 +36,39 @@ body {
     position: relative;
     margin: 0 auto;
     width: 853px;
+}
+
+#rest {
+    position: relative;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+
+#title, #info, #comments {
+    position: absolute;
+    float: left;
+    clear: left;
+    width: 645px;
+    margin-left: 20px;
+}
+
+#suggestions {
+    position: absolute;
+    float: right;
+    width: 400px;
+    right: 20px;
+    margin-left: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
 }
