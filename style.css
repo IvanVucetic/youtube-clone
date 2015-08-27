@@ -1,9 +1,19 @@
+/*GENERAL*/
 body {
     margin: 0; /*ovo mora da bi sirina isla 100% */
     font-family: arial, sans-serif;
     background-color: #f1f1f1;
 }
 
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*HEADER*/
 #header {
     background-color: white;
     height: 53px;
@@ -20,6 +30,7 @@ body {
     margin: 0;
 }
 
+/*PLAYER*/
 #player-placeholder {
     position: relative;
     margin-top: 0;
@@ -38,26 +49,29 @@ body {
     width: 853px;
 }
 
+/*OTHER PAGE CONTENT*/
 #rest {
     /*float: left;*/
     position: relative;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
     width: 1100px;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 #left-col {
-    position: relative; /*if abs parent(rest) collapses*/
-    margin-left: 5px;
+    position: relative; /*if abs footer ignores it and goes up*/
+    margin-left: 10px;
+    width: 645px;
+    overflow: auto; /*un-collapsed parent (rest) element*/
 }
 
 #title, #info, #comments {
     position: relative; /*if abs divs overlap + comments cover info and title*/
     float: left;
     clear: left;
-    width: 645px;
     margin-bottom: 10px;
 }
 
@@ -72,15 +86,10 @@ body {
     background-color: white;
 }
 
-ul {
-    padding-left: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
+/*FOOTER*/
 #footer {
     clear: both;
-    background-color: red;
+    background-color: white;
+    height: 60px;
 }
+
