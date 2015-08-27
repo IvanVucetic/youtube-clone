@@ -49,8 +49,8 @@ body {
 }
 
 #left-col {
-    position: absolute;
-    left: 20px;
+    position: relative; /*if abs parent(rest) collapses*/
+    margin-left: 5px;
 }
 
 #title, #info, #comments {
@@ -62,11 +62,11 @@ body {
 }
 
 #suggestions {
-    position: absolute;
-    /*float: right;*/
+    position: relative; /*if abs parent(rest) collapses*/
+    float: right; /*to allow for left-col to take place*/
     width: 400px;
     right: 20px;
-    margin-left: 5px;
+    margin-right: 5px;
     padding-top: 15px;
     padding-left: 10px;
     background-color: white;
@@ -78,4 +78,9 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+#footer {
+    clear: both;
+    background-color: red;
 }
